@@ -14,9 +14,9 @@ namespace myDotnet
         /// <param name="input"></param>
         /// <param name="context"></param>
         /// <returns></returns>
-        public string FunctionHandler(string input, ILambdaContext context)
+        public string FunctionHandler(JObject input, ILambdaContext context)
         {
-            return input?.ToUpper();
+            return input['name']?.ToUpper();
         }
     }
 }
