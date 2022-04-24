@@ -16,7 +16,7 @@ namespace myDotnet
         /// <returns></returns>
         public string FunctionHandler(string input, ILambdaContext context)
         {
-            return "HelloWorld"
+            return "HelloWorld";
         }
     }
 }
