@@ -20,5 +20,4 @@ phases:
       - dotnet new -i Amazon.Lambda.Templates::*
       - dotnet tool install -g Amazon.Lambda.Tools
       - dotnet tool update -g Amazon.Lambda.Tools
-      - pwd
       - dotnet lambda deploy-function "myDotnet" --function-role "arn:aws:iam::218063557524:role/LambdaRole" --region "us-east-1" --framework "netcoreapp3.1"

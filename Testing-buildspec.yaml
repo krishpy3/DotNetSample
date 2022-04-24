@@ -1,0 +1,11 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - echo Restore started on `date`
+      - pip install --upgrade awscli
+  build:
+    commands:
+      - echo Build started on `date`
+      - aws lambda invoke --function-name myDotnet --payload '"name"' response.json
+

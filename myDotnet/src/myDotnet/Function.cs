@@ -6,6 +6,12 @@ using Amazon.Lambda.Core;
 
 namespace myDotnet
 {
+    // public class FunctionInput
+    // {
+    //     public string name { get; set; }
+    //     public string value { get; set; }
+    // }
+
     public class Function
     {
         /// <summary>
@@ -16,7 +22,7 @@ namespace myDotnet
         /// <returns></returns>
         public string FunctionHandler(string input, ILambdaContext context)
         {
-            return "HelloWorld";
+            return input.ToUpper();
         }
     }
 }
